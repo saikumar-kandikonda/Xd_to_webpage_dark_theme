@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DEMO CODE</title>
+        <link rel="stylesheet" href="style.css">
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            
+        }
+     
+        #collapsedata a{
+            color: black;
+      
+ }
+        #collapsedata a:hover{
+            transition: 0.2s;
+
+  border-bottom-style: solid; 
+  border-bottom-color: #524FBA;
+        }
+        .navbar-brand{
+            color:#524FBA;
+            font-size: large;
+        }
+        .getstarted{
+            border: 2px solid #5E5BC7;
+            background-color: #5E5BC7;
+            color: white;
+         border-radius: 8px;
+        }
+        .getstarted:hover{
+            color:white;
+            transition: 0.2s;
+  transform: scale(1.1);
+           
+        }
+        .tryitnow{
+            border: 4px solid #5E5BC7;
+            background-color: #5E5BC7;
+            color: white;
+         border-radius: 5px;
+        }
+        .tryitnow:hover{
+            color:white;
+            transition: 0.2s;
+        transform: scale(1.1);
+        }
+        .page4button:hover{
+            color:white;
+            transition: 0.2s;
+        transform: scale(1.1); 
+        }
+        .page1{
+width: 100%;
+height: 48rem;
+background-image: url(assests/Triangle_homePage.svg);
+        background-size: contain;
+        background-repeat: no-repeat;  
+        background-position-x: 100%;
+        }
+        .page1_1st_col{
+
+            margin-top: 6%;
+margin-bottom: 12%;
+height: 40%;
+padding: 9%;
+        }
+        .page1_2nd_col{
+            margin-top: auto;
+            margin-bottom: auto;
+            
+        }
+        .page2{
+            background-image: url(assests/Shape_page2_right.svg);
+        background-size: contain;
+        background-repeat: no-repeat;  
+        background-position-x: 60%;
+        }
+        .page2_1st_col{
+ color: white;
+padding: 9%;
+
+        }
+        .page2_2nd_col{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+        .comments{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 45rem;
+            height: 5rem;
+            
+        }
+        .comments:hover{
+            transition: 0.3s;
+  transform: translate(10px,0);
+            
+        }
+        .social_card_1:hover{
+            transition: 0.5s;
+  transform: translate(0,-15px);
+        }
+        .social_card_2:hover{
+            transition: 0.5s;
+  transform: translate(0,-15px);
+        }
+        .comments img{
+            height: 4rem;
+            width: 5rem;
+        }
+        .page1img{
+            height: 35rem;
+            width: 100%;
+            box-shadow: 0px 15px 50px #B1B5BE ;
+
+        }
+        .page1_2nd_col:hover{
+            transition: 0.2s;
+  transform: scale(1.1);
+        }
+        .page2{
+            width: 100%;
+height: 45rem;
+background-color:#5E5BC7;  
+
+        }
+        .page3{
+            width: 100%;
+height: 42rem;
+/* background-color:greenyellow;    */
+        }
+        .social_card_1{
+            height: 33rem;
+            width: 30rem;
+            margin-right: 0.5rem;
+            margin-left: 16rem;
+            margin-top:8rem;
+            margin-bottom: 8rem;
+           
+            box-shadow: 5px 30px 50px #B1B5BE ;
+         border-radius: 5px;
+         text-align: center;
+        }
+        .social_card_2{
+            height: 33rem;
+            width: 30rem;
+            margin-right: 16rem;
+            margin-left: 0.5rem;
+            margin-top:8rem;
+            margin-bottom: 8rem;
+            box-shadow: 5px 30px 50px #B1B5BE ;
+         border-radius: 5px;
+         text-align: center;
+        }
+        .social_card_1 img{
+            height: 22rem;
+            width: 30rem;
+        }
+        .social_card_2 img{
+            height: 22rem;
+            width: 30rem;
+        }
+       .page4
+    {
+        width: 100%;
+height: 20rem;
+/* background-color: pink;  */
+background-image: url(assests/Shape_on_footer.svg);
+        background-size: contain;
+        background-repeat: no-repeat;  
+        background-position-x: 60%;
+      
+
+    }
+    .page4_col{
+    padding-top: 1rem;
+   padding-bottom: 1rem;
+   padding-left: 10rem;
+   padding-right: 10rem;
+   margin-top: auto;
+   margin-bottom: auto;
+   
+    }
+   
+    .page4button{
+        margin-left: auto;
+        border: 2px solid #C63C8C;
+            background-color: #C63C8C;
+            color: white;
+         border-radius: 8px;
+     margin-right: auto;
+     width: 12rem;
+    }
+    .footer{
+    
+      background-color: #5E5BC7;
+      color:white
+    }
+    /* -------------------darktheme--------------- */
+    body{
+        background-color: white;
+    }
+    body.dark {
+	background-color: black;
+    color:white;
+
+}
+body.dark #collapsedata a{
+        color:white;
+  
+}
+body.dark .social_card_1{
+        color:black;
+  
+}
+body.dark .social_card_2{
+        color:black;
+  
+}
+body.dark .fa-bars{
+        color:white;
+  
+}
+
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+    margin-right: 5rem;
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 33px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 18px;
+	width: 18px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(18px);
+}
+
+
+.fa-moon-o {
+	color: #f1c40f;
+}
+
+.fa-sun-o{
+	color: #f39c12;
+}
+    /* -------------------darktheme--------------- */
+    
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            const chk = document.getElementById('chk');
+    chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+        });
+        
+        </script>
+    <script type="text/javascript">
+    
+
+    </script>
+    </head>
+<body>
+    <div class="body">
+    
+      <!-- -----------header------------- -->
+     <div class="container-fluid">
+        <div class="navbar navbar-expand-sm" >
+            <a href="Index.html" >
+            <div class="navbar-brand font-weight-bold" >
+                Social Posts 
+            </div></a>
+            <button type="button d-flex justify-content-center" class="navbar-toggler" data-toggle="collapse" data-target="#collapsedata">
+                <i class="fa fa-bars" aria-hidden="true">&nbsp;</i>
+            </button>
+        <div class="collapse navbar-collapse text-center" id="collapsedata">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link"href="index.html">Discover</li></a>
+            <li class="nav-item"><a class="nav-link"href="#">What we do</li></a>
+            <li class="nav-item"><a class="nav-link"href="#">Contact Us</li></a>
+        </ul>
+        <div class="d-flex justify-content-end ml-auto">
+            <button class="btn getstarted">Get Started!</button>
+        </div>
+        </div>
+        </div>
+        </div>
+         <!-- -----------header------------- -->
+         <br><br>
+         <div>
+            <input type="checkbox" class="checkbox " id="chk" />
+            <label class="label d-flex justify-content-end ml-auto" for="chk">
+                
+                <i class="fa fa-sun-o"></i>
+                <i class="fa fa-moon-o"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+     
+             <!-- -----------page1------------- -->
+<div class="container">
+  <div class="row my-0 page1">
+      <div class="col-lg-6 col-md-6 col-sm-6 cols-10 mx-0 page1_1st_col">
+        <h1>
+            Increase your social media growth on our platform's 
+        </h1><br>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget. Mauris placerat eleifend leo.</p><br>
+        <button class="btn tryitnow">
+Try it now !
+
+        </button>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 cols-10 mx-0 page1_2nd_col">
+        <div class="card border shadow homepage_graph_img">
+            <img class="page1img card-img " src="assests/Graph_homepage.svg" alt="Graph_here">
+        </div>
+      </div>
+  </div>
+
+</div>
+<!-- -----------page1------------- -->
+<!-- -----------page2------------- -->
+<div class="container-fluid">
+<div class="row page2">
+<div class="col-lg-6 col-md-6 col-sm-6 cols-10 mx-0 page2_1st_col">
+    <h1>
+        Increase your social media growth on our platform's 
+    </h1><br>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget. Mauris placerat eleifend leo.</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget. Mauris placerat eleifend leo.</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 cols-10 mx-0 page2_2nd_col">
+
+    <div class="media comments p-2">
+        <img src="assests/profile_pic_1.jpeg" alt="John Doe" class="mr-2 mt-1 rounded-circle" >
+        <div class="media-body mt-4 img-fluid">
+          <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+        </div>
+      </div><br>
+      <div class="media comments p-2 ml-5">
+        <img src="assests/profile_pic_1.jpeg" alt="John Doe" class="mr-2 mt-1 rounded-circle" >
+        <div class="media-body mt-4 img-fluid">
+          <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+        </div>
+      </div><br>
+      <div class="media comments p-2">
+        <img src="assests/profile_pic_1.jpeg" alt="John Doe" class="mr-2 mt-1 rounded-circle" >
+        <div class="media-body mt-4 img-fluid">
+          <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+        </div>
+      </div><br>
+      <div class="media comments p-2">
+        <img src="assests/profile_pic_1.jpeg" alt="John Doe" class="mr-2 mt-1 rounded-circle" >
+        <div class="media-body mt-4 img-fluid">
+          <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+        </div>
+      </div><br>
+      
+</div>
+</div>
+</div>
+<!-- -----------page2------------- -->
+
+<!-- -----------page3------------- -->
+<div class="container">
+    <div class="row page3">
+<div class="col-lg-6 col-md-6 col-sm-10 cols-10 mx-auto page3_1st_col">
+    <div class="card social_card_1">
+        <img class="card-img img-fluid" src="assests/Facebook_image.jpg" alt="Card image" >
+        <div class="card-body">
+          <h2 class="card-title">Target Facebook</h2>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        </div>
+      </div>
+      <br>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-10 cols-10 mx-auto page3_2nd_col">
+    <div class="card social_card_2">
+        <img class="card-img img-fluid" src="assests/Instagram_image.jpg" alt="Card image" >
+        <div class="card-body">
+          <h2 class="card-title">Target Instagram</h2>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        </div>
+      </div>
+      <br>
+</div>
+</div>
+</div>
+<!-- -----------page3------------- -->
+<br><br><br>
+<!-- -----------page4------------- -->
+<div class="container">
+<div class="row page4">
+   <div>
+
+  
+    <div class="col-lg-6 col-md-6 col-sm-6 cols-6 mx-auto mt-5 page4_col text-center">
+        
+        <h1 class="text-center bold">Grow your social media</h1>
+        <p class="text-center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.  Vestibulum tortor quam, feugiat vitae, ultricies eget. Mauris placerat eleifend leo</p><br>
+        <button class="btn page4button">
+           Try it now!
+                    </button>
+                   
+                
+    </div>
+</div>
+</div>
+<!-- -----------page4------------- -->
+<br>
+<!-- -----------footer------------- -->
+<div class="container-fluid">
+<footer class="footer text-center ">
+    &copy;2021 all rights reserved!
+</footer>
+</div>
+<!-- -----------footer------------- -->
+
+    </div>
+    <style>
+        @media (max-width: 998px) {
+            html{
+                
+            }
+        }
+        @media (max-width: 762px) {
+            html{
+               font-size: 50%;
+            }
+            
+                      .comments{
+                          margin-left: auto;
+                          margin-right: auto;
+                          width: 45rem;
+                          height: 5rem;
+                          
+                      }.page3{
+                          width: 100%;
+                  height: 82rem;
+                  /* background-color:greenyellow;    */
+                      }
+                      .social_card_1{
+                          height: 33rem;
+                          width: 30rem;
+                          margin-right: auto;
+                          margin-left: auto;
+                          margin-top:5rem;
+                          margin-bottom: 2rem;
+                      }
+                      .social_card_2{
+                          height: 33rem;
+                          width: 30rem;
+                          margin-right: auto;
+                          margin-left: auto;
+                          margin-top:2rem;
+                          margin-bottom: 2rem;
+                         
+                      }
+                     
+                      .page4
+                  {
+                      width: 100%;
+                  height: 55rem;
+                  
+                  }
+                  .page4_col{
+                      /* background-color: red; */
+                      background-position-x: 0%;
+                      background-position-y: 0%;
+                    margin-left: auto;
+                    margin-right: auto;
+                        font-display: block;
+                    width: 100%;
+
+
+}
+        }
+        @media (max-width: 572px) {
+            html{
+                font-size: 50%;
+            }
+                .page1{    
+                  
+width: 100%;
+height: 48rem;
+margin-bottom: 10rem;
+            }
+            .page1img{
+        height: 25rem;
+    }
+    .page2{
+      margin-top:10rem;
+      height: 78rem;
+    }
+    .page2_1st_col{
+color: white;
+padding: 9%;
+
+    }
+    .page2_2nd_col{
+  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .comments{
+        margin-left: auto;
+        margin-right: auto;
+        width: 45rem;
+        height: 5rem;
+        
+    }.page3{
+        width: 100%;
+height: 42rem;
+/* background-color:greenyellow;    */
+    }
+    .social_card_1{
+        height: 33rem;
+        width: 30rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:5rem;
+        margin-bottom: 5rem;
+    }
+    .social_card_2{
+        height: 33rem;
+        width: 30rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:5rem;
+        margin-bottom: 5rem;
+       
+    }
+    .social_card_1 img{
+        height: 22rem;
+        width: 30rem;
+    }
+    .social_card_2 img{
+        height: 22rem;
+        width: 30rem;
+    }
+    .page4
+{
+    width: 100%;
+height: 20rem;
+margin-top:38rem;
+
+  
+
+}
+
+        }
+    </style>
+</body>
+</html>
